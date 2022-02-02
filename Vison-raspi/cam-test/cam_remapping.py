@@ -45,7 +45,7 @@ def main():
     c2 = pow(c,2)
     d = 13.125
     Z = 182.5
-    f = 3.04 #[mm]   # * 0.001  #[m]
+    f = -3.04 #[mm]   # * 0.001  #[m]
     f2 = pow(f,2)
     H = 200
     while True: 
@@ -67,9 +67,12 @@ def main():
                 y = (i-h/2)
                 if x == 0:
                     x = 0.0001
-                X = x*((pow(b,2)+pow(c,2))*Z-2*b*c*math.sqrt(pow(y,2)+pow(x,2)+pow(Z,2)))/f*(pow(b,2)-pow(c,2))
-                Y = y*((pow(b,2)+pow(c,2))*Z-2*b*c*math.sqrt(pow(y,2)+pow(x,2)+pow(Z,2)))/f*(pow(b,2)-pow(c,2))
-                sc = 10
+                rp = math.sqrt(pow(x,2)+pow(y,2))
+                Rp = (  -(b2-c2)*H*rp ) \
+                     /( (b2 + c2)*f - 2*b*c*math.sqrt(math.sqrt(pow(rp,2)+f2)))
+                X = Rp/(math.sqrt(1+(pow(y,2)/pow(x,2))))
+                Y = (y/x)*X
+                sc = 5
                 #print(X,Y)
                 if   i < (h/2) and j > (w/2):
                     x_a =  -X/sc

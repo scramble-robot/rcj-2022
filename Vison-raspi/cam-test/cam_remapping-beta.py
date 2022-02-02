@@ -45,7 +45,7 @@ def main():
     c2 = pow(c,2)
     d = 13.125
     Z = 182.5
-    f = 0.00000000000000000000000000000000000000000000001 #[mm]   # * 0.001  #[m]
+    f = 3.04 #[mm]   # * 0.001  #[m]
     f2 = pow(f,2)
     H = 200
     while True: 
@@ -69,35 +69,35 @@ def main():
                     x = 0.0001
                 rp = math.sqrt(pow(x,2)+pow(y,2))
                 Rp = (  -(b2-c2)*H*rp ) \
-                     /( (b2 + c2)*f - 2*b*c*math.sqrt(math.sqrt(pow(rp,2)+f2)))
-                X = Rp/(math.sqrt(1+(pow(y,2)/pow(x,2))))
-                Y = (y/x)*X
-                sc = 5
+                     /( (b2 + c2)*f - 2*b*c*math.sqrt(math.sqrt(pow(rp,2)+f2)))                    
+                X = x*((pow(b,2)+pow(c,2))*Z-2*b*c*math.sqrt(pow(y,2)+pow(x,2)+pow(Z,2)))/f*(pow(b,2)-pow(c,2))
+                Y = y*((pow(b,2)+pow(c,2))*Z-2*b*c*math.sqrt(pow(y,2)+pow(x,2)+pow(Z,2)))/f*(pow(b,2)-pow(c,2))
+                sc = 10
                 #print(X,Y)
                 if   i < (h/2) and j > (w/2):
                     x_a =  -X/sc
                     map_x[i,j] = (w/2)+(x_a)
                     y_a =  -Y/sc
                     map_y[i,j] = (h/2)+(y_a)
-                    print(x_a,y_a)
+                    #print(x_a,y_a)
                 if   i < (h/2) and j < (w/2):
                     x_a =  X/sc
                     map_x[i,j] = (w/2)+(x_a)
                     y_a =  Y/sc
                     map_y[i,j] = (h/2)+(y_a)
-                    print(x_a,y_a)
+                    #print(x_a,y_a)
                 if   i > (h/2) and j > (w/2):
                     x_a =  -X/sc
                     map_x[i,j] = (w/2)+(x_a)
                     y_a =  -Y/sc
                     map_y[i,j] = (h/2)+(y_a)
-                    print(x_a,y_a)
+                    #print(x_a,y_a)
                 if   i > (h/2) and j < (w/2):
                     x_a =  X/sc
                     map_x[i,j] = (w/2)+(x_a)
                     y_a =  Y/sc
                     map_y[i,j] = (h/2)+(y_a)
-                    print(x_a,y_a)
+                    #print(x_a,y_a)
         dst = cv.remap(frame, map_x, map_y, cv.INTER_CUBIC)
 
         cv.imshow('ORIGINAL', frame)
