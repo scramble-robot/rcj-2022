@@ -401,7 +401,9 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "power2.0",
-        "nets": [],
+        "nets": [
+          "+15V"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
@@ -441,7 +443,6 @@
         "microvia_drill": 0.1,
         "name": "power5",
         "nets": [
-          "+15V",
           "GND",
           "Net-(C5-Pad2)",
           "Net-(D7-Pad2)"
@@ -465,7 +466,7 @@
       "idf": "",
       "netlist": "./",
       "specctra_dsn": "main20220213.dsn",
-      "step": "",
+      "step": "main20220213.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

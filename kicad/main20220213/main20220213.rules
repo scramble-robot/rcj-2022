@@ -103,11 +103,11 @@
     )
   )
   (class "kicad_default"
-    GND /AUX1/3 /AUX1/4 +5V "Net-(D6-Pad2)" "Net-(D7-Pad2)" +15V "Net-(F1-Pad2)"
-    "Net-(J1-Pad2)" "Net-(J3-Pad1)" "Net-(J6-Pad1)" "Net-(J8-Pad1)" "Net-(J8-Pad2)" "Net-(J8-Pad4)" "Net-(J10-Pad1)" "Net-(J10-Pad3)"
-    "Net-(J11-Pad1)" "Net-(J11-Pad3)" +3V3 "Net-(J13-Pad1)" "Net-(J13-Pad3)" "Net-(Q1-Pad1)" PROG "/Switch/SW_GOAL"
-    "/Switch/SW_START" "unconnected-(U1-Pad12)" "unconnected-(U1-Pad11)" "unconnected-(U1-Pad10)" "unconnected-(U1-Pad9)" "unconnected-(U1-Pad8)" "Net-(R15-Pad1)" Vbatt
-    "/Switch/SW_led_R" "/Switch/SW_led_G" /LED/LED4 /LED/LED3 /LED/LED2 /LED/LED1 "Net-(J2-Pad1)"
+    GND /AUX1/3 /AUX1/4 +5V "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(F1-Pad2)" "Net-(J1-Pad2)"
+    "Net-(J3-Pad1)" "Net-(J6-Pad1)" "Net-(J8-Pad1)" "Net-(J8-Pad2)" "Net-(J8-Pad4)" "Net-(J10-Pad1)" "Net-(J10-Pad3)" "Net-(J11-Pad1)"
+    "Net-(J11-Pad3)" +3V3 "Net-(J13-Pad1)" "Net-(J13-Pad3)" "Net-(Q1-Pad1)" PROG "/Switch/SW_GOAL" "/Switch/SW_START"
+    "unconnected-(U1-Pad12)" "unconnected-(U1-Pad11)" "unconnected-(U1-Pad10)" "unconnected-(U1-Pad9)" "unconnected-(U1-Pad8)" "Net-(R15-Pad1)" Vbatt "/Switch/SW_led_R"
+    "/Switch/SW_led_G" /LED/LED4 /LED/LED3 /LED/LED2 /LED/LED1 "Net-(J2-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -128,6 +128,7 @@
     )
   )
   (class power2.0
+    +15V
     (clearance_class default)
     (via_rule default)
     (rule

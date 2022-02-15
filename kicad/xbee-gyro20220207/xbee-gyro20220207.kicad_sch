@@ -1408,22 +1408,6 @@
     (pin "9" (uuid 6bf5e8eb-0fdf-4a95-a48c-aaf666c9a265))
   )
 
-  (symbol (lib_id "power:+5V") (at 102.87 24.13 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid d427b096-2104-4cac-9d5d-d2195401989e)
-    (property "Reference" "#PWR0105" (id 0) (at 102.87 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (id 1) (at 103.251 19.7358 0))
-    (property "Footprint" "" (id 2) (at 102.87 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 102.87 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fab79269-47fb-42f7-a3ad-b9ec94b79b4b))
-  )
-
   (symbol (lib_id "Device:LED") (at 215.9 148.59 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d979db62-0823-47f9-a365-21e66b5ab681)
@@ -1461,9 +1445,6 @@
     )
     (path "/3a2adf66-79a8-418e-aeb8-83b71b2978cd"
       (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/d427b096-2104-4cac-9d5d-d2195401989e"
-      (reference "#PWR0105") (unit 1) (value "+5V") (footprint "")
     )
     (path "/a231a5c3-b8cd-4dcd-ac6c-04c40c185a50"
       (reference "#PWR0106") (unit 1) (value "+5V") (footprint "")

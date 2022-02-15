@@ -1,4 +1,4 @@
-19935047248938772
+19936692153385498
 0.main.robot
 AMASS_XT30PW-M_1x02_P5.0mm
 Connector XT30 Vertical Cable Male, https://www.tme.eu/en/Document/3cbfa5cfa544d79584972dd5234a409e/XT30U%20SPEC.pdf
@@ -468,6 +468,13 @@ arduino_MEGA2560PRO-EMBED
 0
 86
 86
+0.main.robot
+scramble-logo
+
+
+0
+0
+0
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
