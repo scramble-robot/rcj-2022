@@ -56,7 +56,7 @@ def main():
     cap_width = args.width
     cap_height = args.height
 
-    #cap = cv.VideoCapture('image/1.mp4')
+    cap = cv.VideoCapture('image/1.mp4')
     #cap = cv.VideoCapture(1)
     #cap = final
     cap.set(cv.CAP_PROP_FRAME_WIDTH, cap_width)
