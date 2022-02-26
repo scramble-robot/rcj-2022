@@ -1,4 +1,4 @@
-#!/usr/bin/env pythona
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 [summary]
