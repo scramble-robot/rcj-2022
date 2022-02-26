@@ -1,5 +1,5 @@
 
-(rules PCB kick-drib
+(rules PCB kick-drib-2
   (snap_angle 
     fortyfive_degree
   )
@@ -93,7 +93,7 @@
   )
   (class default
     "Net-(C3-Pad1)" "Net-(J1-Pad1)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J1-Pad2)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)"
-    "Net-(K1-Pad1)" "Net-(K1-Pad2)" "Net-(Q1-Pad1)" "Net-(R3-Pad2)" "Net-(R1-Pad1)" "Net-(R2-Pad1)" "Net-(D2-Pad2)"
+    "Net-(K1-Pad1)" "Net-(K1-Pad2)" "Net-(Q1-Pad1)" "Net-(R3-Pad2)" "Net-(R1-Pad1)" "Net-(R2-Pad1)" "Net-(D2-Pad2)" "Net-(J4-Pad1)"
     (clearance_class default)
     (via_rule default)
     (rule

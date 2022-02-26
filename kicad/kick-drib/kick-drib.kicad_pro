@@ -120,7 +120,8 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        1.0
       ],
       "via_dimensions": [
         {
@@ -457,9 +458,9 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "kick-drib.dsn",
-      "step": "",
-      "vrml": ""
+      "specctra_dsn": "kick-drib-2.dsn",
+      "step": "kick-drib.step",
+      "vrml": "kick-drib.wrl"
     },
     "page_layout_descr_file": ""
   },
