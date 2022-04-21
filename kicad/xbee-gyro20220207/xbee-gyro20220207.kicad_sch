@@ -1066,7 +1066,7 @@
     (property "Value" "IMU_in" (id 1) (at 217.17 64.77 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" (id 2) (at 217.17 78.74 0)
+    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" (id 2) (at 217.17 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 217.17 78.74 0)
@@ -1468,7 +1468,7 @@
       (reference "D3") (unit 1) (value "TX") (footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/30d4a5b8-34e9-412f-9d1a-e616a8a28215"
-      (reference "J1") (unit 1) (value "IMU_in") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical")
+      (reference "J1") (unit 1) (value "IMU_in") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical")
     )
     (path "/0bf7f675-adbe-42d7-8d1e-a9414fad6301"
       (reference "J2") (unit 1) (value "IMU") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical")

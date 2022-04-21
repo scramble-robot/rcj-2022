@@ -124,17 +124,26 @@
     )
   )
   (placement
+    (component Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical
+      (place J1 54000.000000 -118550.000000 back 180.000000 (PN IMU_in))
+    )
     (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (place D2 48000.000000 -102000.000000 front 90.000000 (PN RX))
+      (place D2 49000.000000 -102000.000000 front 90.000000 (PN RX))
     )
     (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
       (place R5 87000.000000 -99000.000000 front 90.000000 (PN 10k))
     )
+    (component "0.main.robot:XBEE-S2C"
+      (place U1 80000.000000 -115000.000000 back 270.000000 (PN "XBEE-S2C"))
+    )
     (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::1
-      (place R7 51000.000000 -98000.000000 front 90.000000 (PN 470))
+      (place R7 54000.000000 -98000.000000 front 90.000000 (PN 470))
     )
     (component Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical
-      (place J2 72407.898000 -135407.898000 front 45.000000 (PN IMU))
+      (place J2 72407.900000 -135407.900000 front 45.000000 (PN IMU))
+    )
+    (component LOGO
+      (place G*** 54000.000000 -130000.000000 front 0.000000 (PN LOGO))
     )
     (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::2
       (place R3 99000.000000 -107000.000000 front 180.000000 (PN 10k))
@@ -149,34 +158,52 @@
       (place R1 47000.000000 -121000.000000 front -90.000000 (PN 470))
     )
     (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
-      (place D3 48000.000000 -98000.000000 front 90.000000 (PN TX))
+      (place D3 49000.000000 -98000.000000 front 90.000000 (PN TX))
     )
     (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::5
-      (place R4 51000.000000 -102000.000000 front 90.000000 (PN 470))
+      (place R4 54000.000000 -102000.000000 front 90.000000 (PN 470))
     )
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
       (place C1 82000.000000 -108000.000000 front 90.000000 (PN 0.1u))
     )
     (component Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical
-      (place J3 74200.000000 -92669.329000 front 135.000000 (PN XBee))
+      (place J3 74200.000000 -92669.300000 front 135.000000 (PN XBee))
     )
     (component Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::6
-      (place R2 46000.000000 -109000.000000 front 90.000000 (PN 10k))
+      (place R2 48000.000000 -109000.000000 front 180.000000 (PN 10k))
     )
     (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder::2
-      (place D1 47000.000000 -125000.000000 front 90.000000 (PN RSSI))
-    )
-    (component "0.main.robot:XBEE-S2C"
-      (place U1 80000.000000 -115000.000000 front -90.000000 (PN "XBEE-S2C"))
+      (place D1 48000.000000 -125000.000000 front 90.000000 (PN RSSI))
     )
     (component "0.main.robot:THAU13-AB-R"
-      (place SW1 47000.000000 -115000.000000 back 90.000000 (PN Reset))
-    )
-    (component Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical::1
-      (place J1 55025.000000 -121050.000000 back 180.000000 (PN IMU_in))
+      (place SW1 48000.000000 -115000.000000 back 90.000000 (PN Reset))
     )
   )
   (library
+    (image Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical
+      (outline (path signal 100  -525 635  1050 635))
+      (outline (path signal 100  -1050 -5715  -1050 110))
+      (outline (path signal 100  -1050 110  -525 635))
+      (outline (path signal 100  1050 635  1050 -5715))
+      (outline (path signal 100  1050 -5715  -1050 -5715))
+      (outline (path signal 50  1550 -6250  1550 1150))
+      (outline (path signal 50  1550 1150  -1550 1150))
+      (outline (path signal 50  -1550 1150  -1550 -6250))
+      (outline (path signal 50  -1550 -6250  1550 -6250))
+      (outline (path signal 120  1110 -760  1110 -5775))
+      (outline (path signal 120  -1110 -760  -563.471 -760))
+      (outline (path signal 120  563.471 -760  1110 -760))
+      (outline (path signal 120  -1110 -5775  -307.53 -5775))
+      (outline (path signal 120  -1110 -760  -1110 -5775))
+      (outline (path signal 120  -1110 0  -1110 760))
+      (outline (path signal 120  -1110 760  0 760))
+      (outline (path signal 120  307.53 -5775  1110 -5775))
+      (pin Oval[A]Pad_1000x1000_um 5 0 -5080)
+      (pin Oval[A]Pad_1000x1000_um 4 0 -3810)
+      (pin Oval[A]Pad_1000x1000_um 3 0 -2540)
+      (pin Oval[A]Pad_1000x1000_um 2 0 -1270)
+      (pin Rect[A]Pad_1000x1000_um 1 0 0)
+    )
     (image LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
       (outline (path signal 120  -1660 735  -1660 -735))
       (outline (path signal 120  800 735  -1660 735))
@@ -206,6 +233,51 @@
       (outline (path signal 100  -800 -412.5  -800 412.5))
       (pin RoundRect[T]Pad_975x950_238.404_um_0.000000_0 1 -912.5 0)
       (pin RoundRect[T]Pad_975x950_238.404_um_0.000000_0 2 912.5 0)
+    )
+    (image "0.main.robot:XBEE-S2C"
+      (outline (path signal 203.2  -9750 21250  -12250 21250))
+      (outline (path signal 203.2  -12250 750  -9750 750))
+      (outline (path signal 203.2  12250 750  9750 750))
+      (outline (path signal 203.2  12250 21250  12250 750))
+      (outline (path signal 203.2  -9750 21250  -9750 750))
+      (outline (path signal 203.2  -12250 21250  -12250 750))
+      (outline (path signal 203.2  9750 21250  12250 21250))
+      (outline (path signal 203.2  9750 21250  9750 750))
+      (outline (path signal 300  -12700 20000  -12718.5 19865.1  -12772.8 19740.2  -12858.7 19634.6
+            -12970 19556.1  -13098.3 19510.5  -13234.1 19501.2  -13367.4 19528.9
+            -13488.3 19591.5  -13587.9 19684.5  -13658.6 19800.8  -13695.3 19931.9
+            -13695.3 20068.1  -13658.6 20199.2  -13587.9 20315.5  -13488.3 20408.5
+            -13367.4 20471.1  -13234.1 20498.8  -13098.3 20489.5  -12970 20443.9
+            -12858.7 20365.4  -12772.8 20259.8  -12718.5 20134.9  -12700 20000))
+      (outline (path signal 203.2  -12250 21250  -5000 27600))
+      (outline (path signal 203.2  -12250 -6250  12250 -6250))
+      (outline (path signal 203.2  -12250 0  -12250 -6250))
+      (outline (path signal 203.2  -5000 27600  5000 27600))
+      (outline (path signal 203.2  12250 0  12250 -6250))
+      (outline (path signal 203.2  -12250 750  -12250 0))
+      (outline (path signal 203.2  12250 21250  5000 27600))
+      (outline (path signal 203.2  12250 750  12250 0))
+      (outline (path signal 203.2  -12250 0  12250 0))
+      (pin Round[A]Pad_1409.6_um 1 -11000 20000)
+      (pin Round[A]Pad_1409.6_um 2 -11000 18000)
+      (pin Round[A]Pad_1409.6_um 3 -11000 16000)
+      (pin Round[A]Pad_1409.6_um 4 -11000 14000)
+      (pin Round[A]Pad_1409.6_um 5 -11000 12000)
+      (pin Round[A]Pad_1409.6_um 6 -11000 10000)
+      (pin Round[A]Pad_1409.6_um 7 -11000 8000)
+      (pin Round[A]Pad_1409.6_um 8 -11000 6000)
+      (pin Round[A]Pad_1409.6_um 9 -11000 4000)
+      (pin Round[A]Pad_1409.6_um 10 -11000 2000)
+      (pin Round[A]Pad_1409.6_um 11 11000 2000)
+      (pin Round[A]Pad_1409.6_um 12 11000 4000)
+      (pin Round[A]Pad_1409.6_um 13 11000 6000)
+      (pin Round[A]Pad_1409.6_um 14 11000 8000)
+      (pin Round[A]Pad_1409.6_um 15 11000 10000)
+      (pin Round[A]Pad_1409.6_um 16 11000 12000)
+      (pin Round[A]Pad_1409.6_um 17 11000 14000)
+      (pin Round[A]Pad_1409.6_um 18 11000 16000)
+      (pin Round[A]Pad_1409.6_um 19 11000 18000)
+      (pin Round[A]Pad_1409.6_um 20 11000 20000)
     )
     (image Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::1
       (outline (path signal 120  -254.724 -522.5  254.724 -522.5))
@@ -242,6 +314,8 @@
       (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
       (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
       (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
+    )
+    (image LOGO
     )
     (image Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder::2
       (outline (path signal 120  -254.724 522.5  254.724 522.5))
@@ -401,51 +475,6 @@
       (pin RoundRect[T]Pad_1050x950_238.404_um_0.000000_0 1 -875 0)
       (pin RoundRect[T]Pad_1050x950_238.404_um_0.000000_0 2 875 0)
     )
-    (image "0.main.robot:XBEE-S2C"
-      (outline (path signal 203.2  -9750 21250  -12250 21250))
-      (outline (path signal 203.2  -12250 750  -9750 750))
-      (outline (path signal 203.2  12250 750  9750 750))
-      (outline (path signal 203.2  12250 21250  12250 750))
-      (outline (path signal 203.2  -9750 21250  -9750 750))
-      (outline (path signal 203.2  -12250 21250  -12250 750))
-      (outline (path signal 203.2  9750 21250  12250 21250))
-      (outline (path signal 203.2  9750 21250  9750 750))
-      (outline (path signal 300  -12700 20000  -12718.5 19865.1  -12772.8 19740.2  -12858.7 19634.6
-            -12970 19556.1  -13098.3 19510.5  -13234.1 19501.2  -13367.4 19528.9
-            -13488.3 19591.5  -13587.9 19684.5  -13658.6 19800.8  -13695.3 19931.9
-            -13695.3 20068.1  -13658.6 20199.2  -13587.9 20315.5  -13488.3 20408.5
-            -13367.4 20471.1  -13234.1 20498.8  -13098.3 20489.5  -12970 20443.9
-            -12858.7 20365.4  -12772.8 20259.8  -12718.5 20134.9  -12700 20000))
-      (outline (path signal 203.2  -12250 21250  -5000 27600))
-      (outline (path signal 203.2  -12250 -6250  12250 -6250))
-      (outline (path signal 203.2  -12250 0  -12250 -6250))
-      (outline (path signal 203.2  -5000 27600  5000 27600))
-      (outline (path signal 203.2  12250 0  12250 -6250))
-      (outline (path signal 203.2  -12250 750  -12250 0))
-      (outline (path signal 203.2  12250 21250  5000 27600))
-      (outline (path signal 203.2  12250 750  12250 0))
-      (outline (path signal 203.2  -12250 0  12250 0))
-      (pin Round[A]Pad_1409.6_um 1 -11000 20000)
-      (pin Round[A]Pad_1409.6_um 2 -11000 18000)
-      (pin Round[A]Pad_1409.6_um 3 -11000 16000)
-      (pin Round[A]Pad_1409.6_um 4 -11000 14000)
-      (pin Round[A]Pad_1409.6_um 5 -11000 12000)
-      (pin Round[A]Pad_1409.6_um 6 -11000 10000)
-      (pin Round[A]Pad_1409.6_um 7 -11000 8000)
-      (pin Round[A]Pad_1409.6_um 8 -11000 6000)
-      (pin Round[A]Pad_1409.6_um 9 -11000 4000)
-      (pin Round[A]Pad_1409.6_um 10 -11000 2000)
-      (pin Round[A]Pad_1409.6_um 11 11000 2000)
-      (pin Round[A]Pad_1409.6_um 12 11000 4000)
-      (pin Round[A]Pad_1409.6_um 13 11000 6000)
-      (pin Round[A]Pad_1409.6_um 14 11000 8000)
-      (pin Round[A]Pad_1409.6_um 15 11000 10000)
-      (pin Round[A]Pad_1409.6_um 16 11000 12000)
-      (pin Round[A]Pad_1409.6_um 17 11000 14000)
-      (pin Round[A]Pad_1409.6_um 18 11000 16000)
-      (pin Round[A]Pad_1409.6_um 19 11000 18000)
-      (pin Round[A]Pad_1409.6_um 20 11000 20000)
-    )
     (image "0.main.robot:THAU13-AB-R"
       (outline (path signal 120  -1425 1850  -2350 1850))
       (outline (path signal 120  -2450 -275  -2450 275))
@@ -472,31 +501,14 @@
       (keepout "" (circle F.Cu 750 0 1375))
       (keepout "" (circle B.Cu 750 0 1375))
     )
-    (image Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical::1
-      (outline (path signal 120  -1330 -1270  1330 -1270))
-      (outline (path signal 120  -1330 -1270  -1330 -11490))
-      (outline (path signal 120  0 1330  1330 1330))
-      (outline (path signal 120  1330 1330  1330 0))
-      (outline (path signal 120  1330 -1270  1330 -11490))
-      (outline (path signal 120  -1330 -11490  1330 -11490))
-      (outline (path signal 50  1750 -11900  -1800 -11900))
-      (outline (path signal 50  1750 1800  1750 -11900))
-      (outline (path signal 50  -1800 1800  1750 1800))
-      (outline (path signal 50  -1800 -11900  -1800 1800))
-      (outline (path signal 100  -1270 1270  635 1270))
-      (outline (path signal 100  1270 -11430  -1270 -11430))
-      (outline (path signal 100  635 1270  1270 635))
-      (outline (path signal 100  1270 635  1270 -11430))
-      (outline (path signal 100  -1270 -11430  -1270 1270))
-      (pin Rect[A]Pad_1700x1700_um 1 0 0)
-      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
-      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
-      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
-      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
-    )
     (padstack Round[A]Pad_1409.6_um
       (shape (circle F.Cu 1409.6))
       (shape (circle B.Cu 1409.6))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1000x1000_um
+      (shape (path F.Cu 1000  0 0  0 0))
+      (shape (path B.Cu 1000  0 0  0 0))
       (attach off)
     )
     (padstack Oval[A]Pad_1700x1700_um
@@ -536,6 +548,11 @@
             -737.5 -450  -737.5 450))
       (attach off)
     )
+    (padstack Rect[A]Pad_1000x1000_um
+      (shape (rect F.Cu -500 -500 500 500))
+      (shape (rect B.Cu -500 -500 500 500))
+      (attach off)
+    )
     (padstack Rect[T]Pad_1300x900_um
       (shape (rect F.Cu -650 -450 650 450))
       (attach off)
@@ -560,7 +577,7 @@
       (pins U2-3 C1-1 J3-2)
     )
     (net GND
-      (pins D2-1 U2-2 D3-1 C1-2 J3-4 D1-1 U1-10 SW1-2 SW1-2@1)
+      (pins D2-1 U1-10 U2-2 D3-1 C1-2 J3-4 D1-1 SW1-2 SW1-2@1)
     )
     (net "Net-(D3-Pad2)"
       (pins R7-2 D3-2)
@@ -569,19 +586,19 @@
       (pins R1-2 D1-2)
     )
     (net "Net-(J1-Pad1)"
-      (pins J2-1 J1-1)
+      (pins J1-1 J2-1)
     )
     (net "Net-(J1-Pad3)"
-      (pins J2-3 J1-3)
+      (pins J1-3 J2-3)
     )
     (net "Net-(J1-Pad4)"
-      (pins J2-4 J1-4)
+      (pins J1-4 J2-4)
     )
     (net "Net-(J1-Pad2)"
-      (pins J2-2 J1-2)
+      (pins J1-2 J2-2)
     )
     (net "Net-(J1-Pad5)"
-      (pins J2-5 J1-5)
+      (pins J1-5 J2-5)
     )
     (net "Net-(J3-Pad1)"
       (pins R5-2 R7-1 J3-1)
@@ -590,19 +607,19 @@
       (pins R6-2 J3-3)
     )
     (net "Net-(R2-Pad2)"
-      (pins R2-2 U1-5 SW1-1 SW1-1@1)
+      (pins U1-5 R2-2 SW1-1 SW1-1@1)
     )
     (net "Net-(R5-Pad1)"
       (pins R5-1 U1-3)
     )
     (net "Net-(R3-Pad2)"
-      (pins R3-2 R6-1 R4-1 U1-2)
+      (pins U1-2 R3-2 R6-1 R4-1)
     )
     (net "Net-(R1-Pad1)"
-      (pins R1-1 U1-6)
+      (pins U1-6 R1-1)
     )
     (net "Net-(R2-Pad1)"
-      (pins R3-1 U2-1 R2-1 U1-1)
+      (pins U1-1 R3-1 U2-1 R2-1)
     )
     (net "Net-(D2-Pad2)"
       (pins D2-2 R4-2)
