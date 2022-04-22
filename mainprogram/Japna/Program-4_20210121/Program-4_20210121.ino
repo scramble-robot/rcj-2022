@@ -11,7 +11,7 @@
 #include <Wire.h>
 
 #include "NT_Robot202111.h"  // Header file for Teensy 3.5
-#include "motorDRV4.h"  //  モーター制御のプログラムを読み込む
+#include "motorDRV6.h"  //  モーター制御のプログラムを読み込む
 
 VL6180X ToF_front;  // create front ToF object
 
