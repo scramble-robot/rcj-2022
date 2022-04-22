@@ -195,7 +195,7 @@ void setup() {
   attachInterrupt(INT_29, intHandle, RISING);
 
   // LEDを初期化する
-  LED_Init();
+  //LED_Init();
   digitalWrite(LED_R, LOW);  // LED_R消灯
   digitalWrite(LED_Y, LOW);  // LED_Y消灯
   digitalWrite(LED_G, LOW);  // LED_G消灯
